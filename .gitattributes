@@ -16,7 +16,7 @@ Dockerfile* text
 *.py        text
 *.rs        text
 *.toml      text
-*.yaml      text
+*.yml       text
 *.docker*   text
 *.Makefile  text
 *.docker*   text
