@@ -20,6 +20,43 @@ Para más información, acá está la [guia de estilo compleata de Google para C
 
 > **Nota:** Los miembros de una estructura (campos) deben usar `snake_case` al igual que las variables comunes.
 
+### Orden específico de includes
+
+En un archivo como:
+
+    dir/archivo.cc
+
+que implementa o testea:
+
+    dir2/archivo.h
+
+El orden debe ser:
+
+1.  `dir2/archivo.h`
+2.  Línea en blanco
+3.  Headers C del sistema y otros headers con extensión `.h` incluidos
+    con `<>`
+4.  Línea en blanco
+5.  Headers `.h` de otras librerías (commons)
+6.  Línea en blanco
+7.  Headers `.h` del propio proyecto
+
+Dentro de cada sección, los includes deben ordenarse
+**alfabéticamente**.
+
+### Ejemplo completo de includes
+
+```cpp
+#include "foo/server/fooserver.h"
+
+#include <sys/types.h>
+#include <unistd.h>
+
+#include <commons/txt.h>
+
+#include "foo/server/db.h"
+```
+
 ---
 
 ## 📑 Mensajes de Commit
