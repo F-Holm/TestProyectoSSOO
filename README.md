@@ -1,22 +1,119 @@
-# c-base-project
+# Test Proyecto SSOO
 
-Esta es una plantilla de proyecto diseñada para crear un proyecto simple en C
-para la cátedra de Sistemas Operativos de la UTN FRBA.
+Plantilla de proyecto que vamos a usar para el TP de Sistemas Operativos
 
-## Compilación
+## 🐳 Entorno de Desarrollo
 
-Para compilar el proyecto, simplemente ejecutar:
+Este proyecto está diseñado específicamente para ser compilado y
+ejecutado en **Linux Ubuntu**.
+
+El entorno oficial utiliza:
+
+-   Un **Dev Container** basado en una imagen de Ubuntu.
+-   Un script `setup.sh` que prepara el entorno automáticamente.
+
+El Dev Container ejecuta `setup.sh` al iniciarse y deja el sistema listo
+para compilar.
+
+Si no se utiliza el Dev Container, el entorno puede prepararse
+manualmente en:
+
+- WSL
+- Máquina Virtual
+- Ubuntu Nativo
+
+Ejecutando:
 
 ```bash
-make
+./setup.sh
 ```
 
-Se generará un archivo ejecutable con el nombre del proyecto en la carpeta
-`bin`, el cual se puede ejecutar con:
+## 🏗 Comandos Disponibles
 
-```bash
-./bin/proyecto
-```
+<table>
+    <thead>
+        <tr>
+            <th>
+                Comando
+            </th>
+            <th>
+                Descripción
+            </th>
+            <th>
+                Ejecutable generado
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <code>make</code>
+            </td>
+            <td>
+                Compila en modo debug (por defecto)
+            </td>
+            <td>
+                <code>bin/TestProyectoSSOO</code>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>make debug</code>
+            </td>
+            <td>
+                Compila en modo debug
+            </td>
+            <td>
+                <code>bin/TestProyectoSSOO</code>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>make release</code>
+            </td>
+            <td>
+                Compila en modo release optimizado
+            </td>
+            <td>
+                <code>bin/TestProyectoSSOO</code>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>make test</code>
+            </td>
+            <td>
+                Compila los tests del proyecto
+            </td>
+            <td>
+                <code>bin/TestProyectoSSOO_tests</code>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>make clean</code>
+            </td>
+            <td>
+                Elimina los archivos generados (<code>obj/</code> y <code>bin/</code>)
+            </td>
+            <td>
+                ---
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>make format</code>
+            </td>
+            <td>
+                Formatea el código con clang-format (estilo Google)
+            </td>
+            <td>
+                ---
+            </td>
+        </tr>
+    </tbody>
+</table>
+
 
 ## Debug desde Visual Studio Code
 
