@@ -92,3 +92,9 @@ $(DEPS): $$(shell find $$(patsubst %lib/,%src/,$$(dir $$@)) -iname "*.c" -or -in
 
 $(sort $(dir $(OUT) $(OBJS))):
 	mkdir -pv $@
+
+.PHONY: format
+format:
+	@echo "Formateando código con estilo Google..."
+	clang-format -i -style=Google $$(find src tests -iname "*.c" -or -iname "*.h")
+	@echo "✅ Formateo completado."
