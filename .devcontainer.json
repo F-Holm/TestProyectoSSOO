@@ -10,7 +10,8 @@
       "extensions": [
         "ms-azuretools.vscode-containers",
         "ms-azuretools.vscode-docker",
-        "vscode-icons-team.vscode-icons"
+        "vscode-icons-team.vscode-icons",
+        "ms-vscode.cpptools-extension-pack"
       ]
     }
   }

@@ -4,11 +4,13 @@ set -e
 echo "Instalando dependencias del sistema..."
 sudo apt update
 sudo apt install -y \
+    git \
     build-essential \
     libreadline-dev \
     libssl-dev \
     clang-format \
-    git
+    gdb \
+    valgrind
 
 # CSpec
 echo "Instalando CSpec..."
