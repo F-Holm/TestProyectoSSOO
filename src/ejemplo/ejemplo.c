@@ -1,18 +1,18 @@
 #include "ejemplo/ejemplo.h"
 
-int sumar(int a, int b) {
+int Sumar(int a, int b) {
   return a + b;
 }
 
-int restar(int a, int b) {
+int Restar(int a, int b) {
   return a - b;
 }
 
-int multiplicar(int a, int b) {
+int Multiplicar(int a, int b) {
   return a * b;
 }
 
-float dividir(float a, float b) {
+float Dividir(float a, float b) {
   if (b == 0)
     return 0;
   return a / b;
