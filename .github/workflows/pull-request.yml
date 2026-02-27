@@ -16,5 +16,8 @@ jobs:
       - name: Setup
         run: sudo ./setup.sh
 
-      - name: Tests
+      - name: Build Tests
         run: make test
+
+      - name: Execute Tests
+        run: ./bin/*_tests
