@@ -5,7 +5,7 @@
   "customizations": {
     "vscode": {
       "settings": {
-        "terminal.integrated.shell.linux": "/bin/bash"
+        "terminal.integrated.defaultProfile.linux": "bash"
       },
       "extensions": [
         "ms-azuretools.vscode-containers",
