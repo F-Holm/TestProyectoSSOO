@@ -16,6 +16,8 @@ Seguimos la **Google C++ Style Guide** adaptada a C. El formato (espacios, llave
 | **Funciones** | PascalCase | `InitializeModule()` |
 | **Macros / Constantes** | MAYÚSCULAS | `MAX_LENGTH` |
 
+Para más información, acá está la [guia de estilo compleata de Google para C++](https://google.github.io/styleguide/cppguide.html)
+
 > **Nota:** Los miembros de una estructura (campos) deben usar `snake_case` al igual que las variables comunes.
 
 ---
