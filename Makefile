@@ -96,5 +96,5 @@ $(sort $(dir $(OUT) $(OBJS))):
 .PHONY: format
 format:
 	@echo "Formateando código con estilo Google..."
-	clang-format -i -style=Google $$(find src -iname "*.c" -or -iname "*.h")
+	clang-format -i -style=file $$(find src -iname "*.c" -or -iname "*.h")
 	@echo "✅ Formateo completado."
