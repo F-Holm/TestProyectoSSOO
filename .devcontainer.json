@@ -1,8 +1,7 @@
 {
   "name": "C++ Dev Ubuntu",
-  "build": {
-    "dockerfile": "Dockerfile"
-  },
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "postCreateCommand": "sudo ./setup.sh",
   "customizations": {
     "vscode": {
       "settings": {
