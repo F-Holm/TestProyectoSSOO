@@ -85,5 +85,6 @@ Adoptamos **Conventional Commits** especificando obligatoriamente el área o mó
 
 ## 🚀 Flujo de Trabajo
 1. **Ramas:** Crea una rama descriptiva: `git checkout -b feature/login-system`.
-2. **Calidad:** El código debe compilar sin advertencias (`-Wall -Werror`).
-3. **Revisión:** Sube tus cambios y solicita una revisión de otro colaborador en el Pull Request antes de integrar a `main`.
+2. **Calidad:** El código debe compilar sin advertencias.
+3. **Formato:** El código debe seguir el formato establecido: `make format`.
+4. **Revisión:** Sube tus cambios y solicita una revisión de otro colaborador en el Pull Request antes de integrar a `main`.
