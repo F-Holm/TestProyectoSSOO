@@ -105,7 +105,7 @@ Ejecutando:
                 <code>make format</code>
             </td>
             <td>
-                Formatea el código con clang-format (estilo Google)
+                Formatea el código con <code>clang-format</code> (estilo Google)
             </td>
             <td>
                 ---
