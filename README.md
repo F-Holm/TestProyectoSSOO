@@ -28,6 +28,22 @@ Ejecutando:
 ./setup.sh
 ```
 
+## Preparar el Dev Container
+
+Se necesita tener Docker instalado
+
+Si estás en Windows se necesita instalar:
+- WSL
+- Una distribución de Linux (Ubuntu es la más popular)
+- Docker Desktop
+
+Luego se tiene configurar Docker Desktop para que use la distribución de Linux instalada
+
+También se necesita tener instalada la extensión de Visual Studio Code llamada:
+```bash
+ms-vscode-remote.remote-containers
+```
+
 ## 🏗 Comandos Disponibles
 
 <table>
