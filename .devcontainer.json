@@ -1,7 +1,7 @@
 {
   "name": "C++ Dev Ubuntu",
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
-  "postCreateCommand": "sudo ./setup.sh",
+  "postCreateCommand": "chmod +x ./setup.sh && sudo ./setup.sh",
   "customizations": {
     "vscode": {
       "settings": {
