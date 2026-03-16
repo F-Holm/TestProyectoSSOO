@@ -12,7 +12,9 @@
         "ms-azuretools.vscode-docker",
         "vscode-icons-team.vscode-icons",
         "ms-vscode.cpptools-extension-pack",
-        "ms-vscode.makefile-tools"
+        "ms-vscode.makefile-tools",
+        "ms-vsliveshare.vsliveshare",
+        "tomoki1207.pdf"
       ]
     }
   }
